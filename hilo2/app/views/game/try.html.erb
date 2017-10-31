@@ -1,0 +1,26 @@
+I'm thinking of a number between 1 and 100. Try to guess.
+<br />
+guess is <%= @guess %>
+<br />
+<%= @result %>
+
+<br />
+
+<hr />
+<form action="game" method="get">
+    <input id="number" type="number" name ="name" placeholder="Guess Number" min="1" max="100"/>
+    <input type="submit" value="Submit Number" />
+    <br>
+    Guesses: <%= cookies[:counter] %> out of 5
+    <br>
+    <br>
+    <label value="radio">Unnecessary radio buttons</label>
+    <input type="radio" name="radio" value="1"/>
+    <input type="radio" name="radio" value="2"/>
+    <br>
+    <label value="checkbox">Unnecessary checkboxes</label>
+    <input type="checkbox" name="box" value="1"/>
+    <input type="checkbox" name="box" value="2"/>
+    <input type="checkbox" name="box" value="3"/>
+    <input type="checkbox" name="box" value="4"/>
+</form>
